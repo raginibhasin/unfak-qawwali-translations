@@ -29,6 +29,7 @@ h2 {
   color: #4a3f3a;
   margin-top: 3rem;
   margin-bottom: 1.2rem;
+  text-align: center;
 }
 
 body {
@@ -243,7 +244,6 @@ body {
 header {
   text-align: center;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(0,0,0,0.15);
   margin-bottom: 3rem;
 }
 
