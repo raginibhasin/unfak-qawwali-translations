@@ -28,8 +28,8 @@ h2 {
   font-size: 1.8em;
   font-weight: 600;
   color: #4a3f3a;
-  margin-top: 0.8rem;
-  margin-bottom: 1.2rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -244,8 +244,25 @@ body {
 
 header {
   text-align: center;
-  padding-bottom: 1.5rem;
-  margin-bottom: 3rem;
+  padding-bottom: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.site-header {
+  padding-bottom: 1rem;
+  margin-bottom: 0.6rem;
+  text-align: center;
+  padding: 2.5rem 1rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  margin: 1rem auto;
+  max-width: 760px;
 }
 
 .about-content {
@@ -287,16 +304,6 @@ header {
 .main-nav a:hover {
   opacity: 1;
   text-decoration: underline;
-}
-
-.site-header {
-  padding-bottom: 1.2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  padding: 2.5rem 1rem 2rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  font-size: 1.2rem;
-  font-weight: 400;
 }
 
 .site-title {
