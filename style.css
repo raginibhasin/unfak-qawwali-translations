@@ -86,7 +86,7 @@ body {
   font-family: 'Noto Nastaliq Urdu', serif;
   direction: rtl;
   text-align: right;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   margin-top: 0.5rem;
   margin-bottom: 0.4rem;
   line-height: 2;
@@ -427,4 +427,143 @@ h1.song-title {
 .note-word {
   font-weight: 600;
   font-family: "Lora", serif;
+}
+
+/* Large container for each lyric set */
+.lyric-section {
+  margin: 50px auto;
+  padding: 30px;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #c4a484;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Subtle internal sections within the main box */
+.lyric-content-section {
+  margin-bottom: 12px;  /* Reduced from 18px */
+  padding: 20px 0;
+  position: relative;
+}
+
+.lyric-content-section:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #c4a484 20%, #c4a484 80%, transparent 100%);
+  opacity: 0.3;
+}
+
+/* Alternative: subtle background variations instead of lines */
+.lyrics-text-section {
+  background-color: rgba(245, 235, 220, 0.4);
+  border-radius: 6px;
+  padding: 12px;  /* Reduced from 16px */
+  margin-bottom: 12px;  /* Reduced from 18px */
+}
+
+.lyrics-text-section .english {
+  margin-bottom: 12px;
+}
+
+.lyrics-text-section .hindi {
+  margin-bottom: 8px;
+}
+
+.lyrics-text-section .urdu {
+  margin-bottom: 8px;
+}
+
+.translation-section {
+  background-color: rgba(240, 240, 240, 0.3);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.word-breakdown-section {
+  background-color: rgba(255, 250, 240, 0.4);
+  border-radius: 6px;
+  padding: 6px 12px 12px 12px;  /* Less top padding, more bottom */
+  margin-bottom: 12px;
+}
+
+.interpretation-section {
+  background-color: rgba(235, 225, 210, 0.3);
+  border-radius: 6px;
+  padding: 6px 12px 12px 12px;  /* Less top padding, more bottom */
+}
+
+/* Section titles */
+.section-title {
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 6px;
+  color: #4a3f3a;
+  font-size: 0.95em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 15px;
+  padding-bottom: 3px;  /* Add space between text and underline */
+}
+
+.breakdown-item {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  padding-left: 8px;
+}
+
+.breakdown-word {
+  font-weight: 600;
+  color: #2f4f4f; /* Dark slate gray */
+}
+
+.translation-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #c4a484 30%, #c4a484 70%, transparent 100%);
+  margin: 8px 0;  /* Reduced from 12px */
+  opacity: 0.4;
+}
+  line-height: 1.7;
+  font-size: 0.95em;
+}
+
+.interpretation-title {
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #155724; /* Dark green */
+}
+
+body {
+  background-color: #f6f1eb;
+}
+
+.lyric-section {
+  background-color: #faf8f5;
+  border: 2px solid #b8956a;
+}
+
+.lyrics-text-box {
+  background-color: #fffef9;
+  border-left-color: #b8956a;
+}
+
+.translation-box {
+  background-color: #f8f5f0;
+  border-left-color: #a8956a;
+}
+
+.word-breakdown-box {
+  background-color: #fbf7f1;
+  border-left-color: #9a8560;
+}
+
+.interpretation-box {
+  background-color: #fdfaf5;
+  border-left-color: #8a7550;
 }
